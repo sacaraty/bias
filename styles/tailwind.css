@@ -1,0 +1,19 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #__next { height: 100%; }
+  html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+}
+
+@layer utilities { .pb-safe { padding-bottom: env(safe-area-inset-bottom); } }
+
+.tippy-box[data-theme~='light-border'] {
+  background-color: #fff;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.tippy-box[data-theme~='light-border'] .tippy-content { padding: 8px 10px; font-size: 12px; line-height: 1.2; }
