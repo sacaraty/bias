@@ -49,6 +49,33 @@ function PanelContent({ bias, onSelectRelated }) {
           {bias.category}
         </span>
       </div>
+      {(bias.year || bias.discoverer) && (
+        <div className="flex flex-wrap items-center gap-3 text-xs text-slate-600">
+          {bias.year && (
+            <span className="inline-flex items-center gap-1">
+              <span className="inline-block h-1.5 w-1.5 rounded-full bg-slate-300" />
+              Discovered: <span className="font-medium text-slate-800">{bias.year}</span>
+            </span>
+          )}
+          {bias.discoverer && (
+            <span className="inline-flex items-center gap-1">
+              <span className="inline-block h-1.5 w-1.5 rounded-full bg-slate-300" />
+              By: <span className="font-medium text-slate-800">{bias.discoverer}</span>
+            </span>
+          )}
+        </div>
+      )}
+      {bias.name_origin && (
+        <div className="rounded-lg border border-slate-200 bg-white p-3">
+          <div className="text-xs uppercase tracking-wide text-slate-500 mb-1">Name origin</div>
+          <p className="text-sm text-slate-800">{bias.name_origin}</p>
+        </div>
+      )}
+      {bias.image && (
+        <div className="rounded-lg overflow-hidden border border-slate-200 bg-white">
+          <img src={bias.image} alt={`${bias.name} illustration`} className="w-full h-auto" />
+        </div>
+      )}
       <div className="rounded-lg border border-slate-200 bg-slate-50 p-3">
         <div className="text-xs uppercase tracking-wide text-slate-500 mb-1">Funny summary</div>
         <p className="text-sm text-slate-800">{bias.funny_summary}</p>
@@ -74,6 +101,18 @@ function PanelContent({ bias, onSelectRelated }) {
           <p className="text-sm text-slate-500">No related biases listed.</p>
         )}
       </div>
+      {Array.isArray(bias.sources) && bias.sources.length > 0 && (
+        <div>
+          <div className="text-xs uppercase tracking-wide text-slate-500 mb-2">Key sources</div>
+          <ul className="list-disc pl-5 space-y-1">
+            {bias.sources.slice(0, 3).map((s, idx) => (
+              <li key={idx} className="text-sm">
+                <a href={s.url} target="_blank" rel="noreferrer" className="text-sky-600 hover:underline">{s.title}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }

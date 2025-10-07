@@ -1,12 +1,172 @@
 ﻿[
-  {"id":"anchoring","name":"Anchoring","category":"Decision Desert","funny_summary":"First number says it louder, your brain claps the hardest.","description":"Anchoring is the tendency to rely too heavily on the first piece of information offered (the anchor) when making decisions. Adjustments away from the anchor are often insufficient.","related":["confirmation","sunk_cost","loss_aversion"]},
-  {"id":"confirmation","name":"Confirmation Bias","category":"Reality Rift","funny_summary":"Your beliefs hire only facts that agree with them.","description":"Confirmation bias is the tendency to search for, interpret, favor, and recall information in a way that confirms one's preexisting beliefs or hypotheses.","related":["anchoring","bandwagon","negativity"]},
-  {"id":"availability","name":"Availability Heuristic","category":"Memory Jungle","funny_summary":"If it pops into mind fast, it must be true (says your brain).","description":"People evaluate the likelihood of events based on how easily examples come to mind, which can be biased by recent exposure or vividness rather than actual probability.","related":["negativity","hindsight","loss_aversion"]},
-  {"id":"hindsight","name":"Hindsight Bias","category":"Memory Jungle","funny_summary":"\"I knew it all along\"—your memory, after the ending is revealed.","description":"Hindsight bias is the tendency to see events as having been predictable after they have already occurred, distorting memory of prior uncertainty.","related":["availability","confirmation"]},
-  {"id":"dunning_kruger","name":"Dunning–Kruger Effect","category":"Self & Ego","funny_summary":"Confidence climbs the hill long before competence catches up.","description":"People with low ability at a task tend to overestimate their ability. High performers may underestimate their relative competence.","related":["fundamental_attribution","bandwagon"]},
-  {"id":"fundamental_attribution","name":"Fundamental Attribution Error","category":"Social Arena","funny_summary":"Others trip because they're clumsy; you trip because the ground was sneaky.","description":"The tendency to overemphasize personality-based explanations for others' behavior while underemphasizing situational explanations.","related":["dunning_kruger","bandwagon"]},
-  {"id":"bandwagon","name":"Bandwagon Effect","category":"Social Arena","funny_summary":"If everyone's doing it, it must be brilliant (right?).","description":"Adopting beliefs because many others hold them. Popularity itself becomes a signal of correctness, irrespective of evidence.","related":["confirmation","fundamental_attribution","dunning_kruger"]},
-  {"id":"loss_aversion","name":"Loss Aversion","category":"Decision Desert","funny_summary":"Losing $5 hurts more than finding $5 feels good.","description":"Losses loom larger than gains. People prefer avoiding losses to acquiring equivalent gains, influencing risk-taking and choices.","related":["anchoring","availability","sunk_cost"]},
-  {"id":"sunk_cost","name":"Sunk Cost Fallacy","category":"Decision Desert","funny_summary":"Throwing good time after bad because you've already paid.","description":"Continuing a behavior or endeavor as a result of previously invested resources (time, money, effort) even if the future costs outweigh the benefits.","related":["anchoring","loss_aversion"]},
-  {"id":"negativity","name":"Negativity Bias","category":"Reality Rift","funny_summary":"Bad news yells; good news whispers.","description":"Negative events and emotions have a greater psychological impact than neutral or positive ones, affecting memory, attention, and decision-making.","related":["availability","confirmation"]}
+  {
+    "id": "anchoring",
+    "name": "Anchoring",
+    "category": "Decision Desert",
+    "funny_summary": "First number says it louder, your brain claps the hardest.",
+    "description": "Anchoring is the tendency to rely too heavily on the first piece of information offered (the anchor) when making decisions. Adjustments away from the anchor are often insufficient.",
+    "related": ["confirmation", "sunk_cost", "loss_aversion"],
+    "year": 1974,
+    "discoverer": "Amos Tversky, Daniel Kahneman",
+    "name_origin": "Named for the initial value that acts as an 'anchor' influencing subsequent judgments.",
+    "sources": [
+      { "title": "Judgment under Uncertainty: Heuristics and Biases (Science, 1974)", "url": "https://www.science.org/doi/10.1126/science.185.4157.1124" },
+      { "title": "Thinking, Fast and Slow (Kahneman, 2011)", "url": "https://www.penguinrandomhouse.com/books/21490/thinking-fast-and-slow-by-daniel-kahneman/" },
+      { "title": "Heuristics and Biases: The Psychology of Intuitive Judgment (2002)", "url": "https://www.cambridge.org/core/books/heuristics-and-biases/4A4E5E0BBF5F9EAEFDF8D2AFA0C7C0B9" }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Anchor_Pictogram.svg/320px-Anchor_Pictogram.svg.png"
+  },
+  {
+    "id": "confirmation",
+    "name": "Confirmation Bias",
+    "category": "Reality Rift",
+    "funny_summary": "Your beliefs hire only facts that agree with them.",
+    "description": "Confirmation bias is the tendency to search for, interpret, favor, and recall information in a way that confirms one's preexisting beliefs or hypotheses.",
+    "related": ["anchoring", "bandwagon", "negativity"],
+    "year": 1960,
+    "discoverer": "Peter C. Wason",
+    "name_origin": "Named for the preference to seek confirming evidence for one's hypothesis.",
+    "sources": [
+      { "title": "Wason (1960) On the failure to eliminate hypotheses (QJEP)", "url": "https://doi.org/10.1080/17470216008416717" },
+      { "title": "Nickerson (1998) Confirmation Bias: A Ubiquitous Phenomenon", "url": "https://doi.org/10.1037/1089-2680.2.2.175" },
+      { "title": "Thinking, Fast and Slow (Kahneman, 2011)", "url": "https://www.penguinrandomhouse.com/books/21490/thinking-fast-and-slow-by-daniel-kahneman/" }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Selective_attention_test.svg/320px-Selective_attention_test.svg.png"
+  },
+  {
+    "id": "availability",
+    "name": "Availability Heuristic",
+    "category": "Memory Jungle",
+    "funny_summary": "If it pops into mind fast, it must be true (says your brain).",
+    "description": "People evaluate the likelihood of events based on how easily examples come to mind, which can be biased by recent exposure or vividness rather than actual probability.",
+    "related": ["negativity", "hindsight", "loss_aversion"],
+    "year": 1973,
+    "discoverer": "Amos Tversky, Daniel Kahneman",
+    "name_origin": "Named for judgments based on the 'availability' of instances in memory.",
+    "sources": [
+      { "title": "Tversky & Kahneman (1973) Availability (Cognitive Psychology)", "url": "https://doi.org/10.1016/0010-0285(73)90033-9" },
+      { "title": "Judgment under Uncertainty (Science, 1974)", "url": "https://www.science.org/doi/10.1126/science.185.4157.1124" },
+      { "title": "Thinking, Fast and Slow (Kahneman, 2011)", "url": "https://www.penguinrandomhouse.com/books/21490/thinking-fast-and-slow-by-daniel-kahneman/" }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Lightbulb_icon.svg/320px-Lightbulb_icon.svg.png"
+  },
+  {
+    "id": "hindsight",
+    "name": "Hindsight Bias",
+    "category": "Memory Jungle",
+    "funny_summary": "\"I knew it all along\"—your memory, after the ending is revealed.",
+    "description": "Hindsight bias is the tendency to see events as having been predictable after they have already occurred, distorting memory of prior uncertainty.",
+    "related": ["availability", "confirmation"],
+    "year": 1975,
+    "discoverer": "Baruch Fischhoff",
+    "name_origin": "Named for the feeling in \"hindsight\" that outcomes were obvious all along.",
+    "sources": [
+      { "title": "Fischhoff (1975) Hindsight ≠ Foresight", "url": "https://doi.org/10.1007/BF01186773" },
+      { "title": "Roese & Vohs (2012) Hindsight Bias (Perspectives on Psychological Science)", "url": "https://doi.org/10.1177/1745691612469037" },
+      { "title": "Hawkins & Hastie (1990) Hindsight: Biased judgments", "url": "https://doi.org/10.1037/0033-295X.97.3.311" }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Retrospect_icon.svg/320px-Retrospect_icon.svg.png"
+  },
+  {
+    "id": "dunning_kruger",
+    "name": "Dunning–Kruger Effect",
+    "category": "Self & Ego",
+    "funny_summary": "Confidence climbs the hill long before competence catches up.",
+    "description": "People with low ability at a task tend to overestimate their ability. High performers may underestimate their relative competence.",
+    "related": ["fundamental_attribution", "bandwagon"],
+    "year": 1999,
+    "discoverer": "Justin Kruger, David Dunning",
+    "name_origin": "Named after the authors who documented the effect in 1999.",
+    "sources": [
+      { "title": "Kruger & Dunning (1999) Unskilled and Unaware of It", "url": "https://doi.org/10.1037/0022-3514.77.6.1121" },
+      { "title": "Dunning (2011) The Dunning–Kruger Effect (In Adv. Exp. Soc. Psych.)", "url": "https://doi.org/10.1016/B978-0-12-385522-0.00005-6" },
+      { "title": "Thinking, Fast and Slow (Kahneman, 2011)", "url": "https://www.penguinrandomhouse.com/books/21490/thinking-fast-and-slow-by-daniel-kahneman/" }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Dunning%E2%80%93Kruger_effect_graph.svg/320px-Dunning%E2%80%93Kruger_effect_graph.svg.png"
+  },
+  {
+    "id": "fundamental_attribution",
+    "name": "Fundamental Attribution Error",
+    "category": "Social Arena",
+    "funny_summary": "Others trip because they're clumsy; you trip because the ground was sneaky.",
+    "description": "The tendency to overemphasize personality-based explanations for others' behavior while underemphasizing situational explanations.",
+    "related": ["dunning_kruger", "bandwagon"],
+    "year": 1977,
+    "discoverer": "Lee Ross",
+    "name_origin": "Named to mark a \"fundamental\" tendency to attribute others' behavior to dispositions.",
+    "sources": [
+      { "title": "Ross (1977) The Intuitive Psychologist and His Shortcomings", "url": "https://doi.org/10.1016/S0065-2601(08)60357-3" },
+      { "title": "Heider (1958) The Psychology of Interpersonal Relations", "url": "https://press.uchicago.edu/ucp/books/book/chicago/P/bo27986364.html" },
+      { "title": "Jones & Nisbett (1971) Actor and Observer (Attribution)", "url": "https://psycnet.apa.org/record/1971-35047-000" }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Person_icon_GRAY.svg/320px-Person_icon_GRAY.svg.png"
+  },
+  {
+    "id": "bandwagon",
+    "name": "Bandwagon Effect",
+    "category": "Social Arena",
+    "funny_summary": "If everyone's doing it, it must be brilliant (right?).",
+    "description": "Adopting beliefs because many others hold them. Popularity itself becomes a signal of correctness, irrespective of evidence.",
+    "related": ["confirmation", "fundamental_attribution", "dunning_kruger"],
+    "year": 1950,
+    "discoverer": "Harvey Leibenstein",
+    "name_origin": "From political \"bandwagons\"—joining because others already have.",
+    "sources": [
+      { "title": "Leibenstein (1950) Bandwagon, Snob, and Veblen Effects (QJE)", "url": "https://doi.org/10.2307/1882692" },
+      { "title": "Cialdini (2007) Influence: Social Proof chapter", "url": "https://www.harpercollins.com/products/influence-robert-b-cialdini" },
+      { "title": "Britannica: Bandwagon Effect", "url": "https://www.britannica.com/science/bandwagon-effect" }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Crowd_icon.svg/320px-Crowd_icon.svg.png"
+  },
+  {
+    "id": "loss_aversion",
+    "name": "Loss Aversion",
+    "category": "Decision Desert",
+    "funny_summary": "Losing $5 hurts more than finding $5 feels good.",
+    "description": "Losses loom larger than gains. People prefer avoiding losses to acquiring equivalent gains, influencing risk-taking and choices.",
+    "related": ["anchoring", "availability", "sunk_cost"],
+    "year": 1979,
+    "discoverer": "Daniel Kahneman, Amos Tversky",
+    "name_origin": "Named within Prospect Theory to capture extra weight on losses versus gains.",
+    "sources": [
+      { "title": "Kahneman & Tversky (1979) Prospect Theory (Econometrica)", "url": "https://doi.org/10.2307/1914185" },
+      { "title": "Tversky & Kahneman (1992) Cumulative Prospect Theory", "url": "https://doi.org/10.1007/BF00122574" },
+      { "title": "Thinking, Fast and Slow (Kahneman, 2011)", "url": "https://www.penguinrandomhouse.com/books/21490/thinking-fast-and-slow-by-daniel-kahneman/" }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Balance_icon.svg/320px-Balance_icon.svg.png"
+  },
+  {
+    "id": "sunk_cost",
+    "name": "Sunk Cost Fallacy",
+    "category": "Decision Desert",
+    "funny_summary": "Throwing good time after bad because you've already paid.",
+    "description": "Continuing a behavior or endeavor as a result of previously invested resources (time, money, effort) even if the future costs outweigh the benefits.",
+    "related": ["anchoring", "loss_aversion"],
+    "year": 1985,
+    "discoverer": "Hal R. Arkes, Catherine Blumer",
+    "name_origin": "Named for the economic concept of \"sunk cost\": costs already incurred and unrecoverable.",
+    "sources": [
+      { "title": "Arkes & Blumer (1985) The Psychology of Sunk Cost", "url": "https://doi.org/10.1016/0749-5978(85)90049-4" },
+      { "title": "Thaler (1980) Toward a Positive Theory of Consumer Choice", "url": "https://doi.org/10.1016/0167-2681(80)90051-7" },
+      { "title": "Thinking, Fast and Slow (Kahneman, 2011)", "url": "https://www.penguinrandomhouse.com/books/21490/thinking-fast-and-slow-by-daniel-kahneman/" }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Trash_can_icon.svg/320px-Trash_can_icon.svg.png"
+  },
+  {
+    "id": "negativity",
+    "name": "Negativity Bias",
+    "category": "Reality Rift",
+    "funny_summary": "Bad news yells; good news whispers.",
+    "description": "Negative events and emotions have a greater psychological impact than neutral or positive ones, affecting memory, attention, and decision-making.",
+    "related": ["availability", "confirmation"],
+    "year": 2001,
+    "discoverer": "Roy F. Baumeister, Ellen Bratslavsky, Catrin Finkenauer, Kathleen D. Vohs",
+    "name_origin": "Named for the asymmetry giving more weight to negative information.",
+    "sources": [
+      { "title": "Baumeister et al. (2001) Bad is Stronger than Good", "url": "https://doi.org/10.1037/1089-2680.5.4.323" },
+      { "title": "Rozin & Royzman (2001) Negativity Bias, Negativity Dominance", "url": "https://doi.org/10.1080/02699930143000235" },
+      { "title": "Thinking, Fast and Slow (Kahneman, 2011)", "url": "https://www.penguinrandomhouse.com/books/21490/thinking-fast-and-slow-by-daniel-kahneman/" }
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warning_icon.svg/320px-Warning_icon.svg.png"
+  }
 ]
