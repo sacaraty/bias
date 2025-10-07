@@ -49,6 +49,21 @@ function PanelContent({ bias, onSelectRelated }) {
           {bias.category}
         </span>
       </div>
+      {/* Discoverer link(s) if present */}
+      {bias.discoverer && (
+        <div className="text-xs text-slate-600">
+          Discovered by:{' '}
+          {bias.discoverer.split(',').map((name, idx) => {
+            const pid = toPersonId(name);
+            const sep = idx < bias.discoverer.split(',').length - 1 ? ', ' : '';
+            return (
+              <a key={pid} href={`/people/${pid}`} className="text-sky-600 hover:underline">
+                {name.trim()} {sep}
+              </a>
+            );
+          })}
+        </div>
+      )}
       {(bias.year || bias.discoverer) && (
         <div className="flex flex-wrap items-center gap-3 text-xs text-slate-600">
           {bias.year && (
@@ -126,4 +141,13 @@ function categoryColor(category) {
     case 'Reality Rift': return '#9333ea';
     default: return '#64748b';
   }
+}
+
+function toPersonId(name) {
+  return name
+    .toLowerCase()
+    .replace(/[.–—]/g, '-')
+    .replace(/[^a-z\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '_');
 }
