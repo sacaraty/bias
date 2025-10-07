@@ -1,5 +1,6 @@
 ﻿import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { categoryColor } from './categories';
 
 export default function SidePanel({ bias, onClose, onSelectRelated, isMobile }) {
   if (!isMobile) {
@@ -132,16 +133,7 @@ function PanelContent({ bias, onSelectRelated }) {
   );
 }
 
-function categoryColor(category) {
-  switch (category) {
-    case 'Self & Ego': return '#2563eb';
-    case 'Social Arena': return '#16a34a';
-    case 'Decision Desert': return '#f59e0b';
-    case 'Memory Jungle': return '#ef4444';
-    case 'Reality Rift': return '#9333ea';
-    default: return '#64748b';
-  }
-}
+// color helper now provided by categories.js
 
 function toPersonId(name) {
   return name
